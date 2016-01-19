@@ -22,6 +22,3 @@ This is a simple comic book collection tracking app that allows a user to organi
    * Run `npm start` to start the application.
    * Navigate to http://localhost:3000/ in your favourite browser.
 
-## Configuration
-
-   Please see `config.json` in the root folder if you want to change the default application settings.
