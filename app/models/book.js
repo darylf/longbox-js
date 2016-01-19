@@ -1,7 +1,7 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;  
+var restful = require('node-restful');
+var mongoose = restful.mongoose;
 
-var BookSchema = new Schema({
+var BookSchema = new mongoose.Schema({
   issue: { type: Number, default: 0 },
   description: { type: String, default: '', trim: true },
   series: { type: String, trim: true },
@@ -15,4 +15,4 @@ var BookSchema = new Schema({
   updatedAt: { type: Date, default: Date.now }
 });
 
-module.exports = mongoose.model('Book', BookSchema);
+module.exports = restful.model('Book', BookSchema);
