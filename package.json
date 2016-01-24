@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "chai": "~3.4.1",
-    "chai-http": "^1.0.0",
+    "restler": "~3.4.0",
     "mocha": "~2.3.4"
   }
 }

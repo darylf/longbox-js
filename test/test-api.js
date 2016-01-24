@@ -20,7 +20,16 @@ describe('Books', function() {
             });
     });
 
-    it('should list a SINGLE book on /books/<id> GET');
+    it('should list a SINGLE book on /books/<id> GET', function(done) {
+        chai.request(server)
+            .get('/api/book/1')
+            .end(function(err, res) {
+                res.should.have.status(200);
+                res.should.be.json;
+                res.body.should.be.a('array');
+                done();
+            });
+    });
 
     it('should add a SINGLE book on /books POST');
 
